@@ -8,16 +8,13 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-const inProduction = (process.env.NODE_ENV === 'production')
+const inProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
     mode: process.env.NODE_ENV || 'development',
 
     entry: {
-        main: [
-            './js/main.js',
-            './scss/main.scss'
-        ],
+        main: ['./js/main.js', './scss/main.scss']
         // vendor: [] // uncomment and add vendor packages to create vendor bundle
     },
 
@@ -35,7 +32,7 @@ module.exports = {
                 use: [
                     'style-loader',
                     MiniCssExtractPlugin.loader,
-                    { loader: 'css-loader', options: { minimize: process.env.NODE_ENV === 'production' } },'postcss-loader','sass-loader'
+                    {loader: 'css-loader', options: {minimize: process.env.NODE_ENV === 'production'}}, 'postcss-loader', 'sass-loader'
                 ]
             },
 
@@ -57,7 +54,9 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: inProduction ? 'img/[name].[hash].[ext]' : 'img/[name].[ext]'
+                            name: inProduction
+                                ? 'img/[name].[hash].[ext]'
+                                : 'img/[name].[ext]'
                         }
                     },
 
@@ -79,7 +78,7 @@ module.exports = {
                 options: {
                     cacheDirectory: true
                 }
-            },
+            }
 
             // uncomment and add options to use modernizr
             // {
@@ -108,13 +107,13 @@ module.exports = {
             filename: inProduction ? '[name].[hash].css' : '[name].css'
         }),
 
-        new PurifyCSSPlugin({
-            paths: glob.sync([
-                path.join(__dirname, '**/*.php'),
-                path.join(__dirname, 'js/*.js')
-            ]),
-            minimize: inProduction
-        }),
+        // new PurifyCSSPlugin({
+        //     paths: glob.sync([
+        //         path.join(__dirname, '**/*.php'),
+        //         path.join(__dirname, 'js/*.js')
+        //     ]),
+        //     minimize: inProduction
+        // }),
 
         new StyleLintPlugin({
             files: ['scss/*.scss']

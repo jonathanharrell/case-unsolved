@@ -1,0 +1,80 @@
+.home-title {
+  margin-top: 5rem;
+  margin-bottom: 0.25rem;
+}
+
+.home-lead {
+  margin-bottom: 2rem;
+  font-size: var(--hiq-font-size-large);
+  font-weight: var(--hiq-font-weight-bold);
+  line-height: 1.25;
+  color: var(--hiq-color-primary);
+}
+
+.awards {
+  padding: 3rem 0;
+}
+
+.award {
+  position: relative;
+  width: 13.5rem;
+  height: 13.5rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/olive-leaves.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.25;
+    transform: translate(-50%, -50%);
+    content: '';
+  }
+}
+
+.award-winner {
+  margin-bottom: 0.25rem;
+  font-family: var(--font-family-condensed);
+  font-size: var(--hiq-font-size-small);
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: var(--hiq-color-primary);
+}
+
+.award-title {
+  margin-bottom: 0.25rem;
+  font-size: var(--hiq-font-size-small);
+  font-weight: var(--hiq-font-weight-bold);
+}
+
+.award-org {
+  margin-bottom: 0;
+  font-size: var(--hiq-font-size-small);
+}
+
+.quote {
+  padding: 4rem 0;
+}
+
+.summary {
+
+  figure {
+    padding: 30% 0;
+    background-color: var(--hiq-gray-darker);
+  }
+
+  div + figure {
+    margin-top: 3rem;
+  }
+}
