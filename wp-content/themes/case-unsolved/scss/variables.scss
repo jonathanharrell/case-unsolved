@@ -97,7 +97,7 @@
   --hiq-description-list-title-font-weight: var(--hiq-font-weight-semibold);
 
   /* global text color */
-  --hiq-text-color: var(--hiq-gray-light);
+  --hiq-text-color: var(--hiq-gray-lighter);
 
   /* inline text elements */
   --hiq-mark-color: hsl(50, 81%, 94%);
@@ -333,6 +333,7 @@
   --hiq-progress-filled-color: var(--hiq-color-primary);
 
   /* custom variables */
+  --font-family-decorative: 'Revue', serif;
   --font-family-condensed: 'HelveticaNeue-CondensedBlack', 'Helvetica Neue', 'Helvetica', sans-serif;
   --font-family-serif: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 }

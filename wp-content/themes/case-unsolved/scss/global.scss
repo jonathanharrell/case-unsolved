@@ -1,0 +1,55 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: var(--font-family-decorative);
+  text-transform: uppercase;
+  color: white;
+}
+
+p {
+  letter-spacing: -0.0125em;
+}
+
+button,
+[role='button'],
+.button {
+  font-family: var(--font-family-condensed);
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+blockquote {
+  font-family: var(--font-family-serif);
+  text-align: center;
+
+  p {
+    letter-spacing: 0;
+    color: white;
+
+    &::before {
+      content: '“';
+    }
+
+    &::after {
+      content: '”';
+    }
+  }
+
+  cite {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--hiq-color-primary);
+    border-bottom: 1px solid var(--hiq-color-primary);
+    font-size: var(--hiq-font-size-small);
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+
+    &::before {
+      content: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.blog-post {
+  padding: 2rem 0;
+
+  &:nth-of-type(odd) {
+    background-color: var(--hiq-gray-darker);
+  }
+}
+
+.blog-post-date {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-family-condensed);
+  font-size: var(--hiq-font-size-small);
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: var(--hiq-color-primary);
+}
+
+.blog-post-title {
+  margin-bottom: 1.5rem;
+  font-size: var(--hiq-font-size-1);
+  font-family: var(--font-family-decorative);
+  text-transform: uppercase;
+  color: white;
+}

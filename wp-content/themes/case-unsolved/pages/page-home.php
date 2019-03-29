@@ -11,6 +11,7 @@ get_header();
 
 <main class="home">
     <header class="home-header">
+        <img src="" alt="" class="home-header-image">
         <div class="container">
             <h1 class="home-title">Case Unsolved</h1>
             <p class="home-lead">A horror feature about a gay couple who accidentally summon a ghost from an old 1980s TV show.</p>

@@ -64,20 +64,7 @@
         ]
     },
     "eslintConfig": {
-        "extends": "eslint-config-whq",
-        "plugins": [
-            "prettier"
-        ],
-        "rules": {
-            "prettier/prettier": [
-                "error",
-                {
-                    "semi": false,
-                    "singleQuote": true,
-                    "tabWidth": 4
-                }
-            ]
-        }
+        "extends": "eslint-config-whq"
     },
     "stylelint": {
         "extends": "stylelint-config-whq"
@@ -86,5 +73,8 @@
         "plugins": {
             "autoprefixer": {}
         }
+    },
+    "dependencies": {
+        "hiq": "^2.6.3"
     }
 }
