@@ -29,6 +29,10 @@ blockquote {
     letter-spacing: 0;
     color: white;
 
+    @media (min-width: $tablet) {
+      font-size: 1.25rem;
+    }
+
     &::before {
       content: '“';
     }
