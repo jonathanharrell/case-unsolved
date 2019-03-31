@@ -8,7 +8,7 @@
   --hiq-gray-darker: hsl(220, 10%, 10%);
   --hiq-gray-dark: hsl(220, 10%, 20%);
   --hiq-gray: hsl(220, 10%, 40%);
-  --hiq-gray-light: hsl(220, 10%, 60%);
+  --hiq-gray-light: hsl(220, 10%, 70%);
   --hiq-gray-lighter: hsl(220, 10%, 90%);
   --hiq-gray-lightest: hsl(220, 10%, 95%);
 
@@ -23,12 +23,12 @@
   --hiq-body-background-color: var(--hiq-gray-darkest);
   --hiq-disabled-border-color: var(--hiq-gray-lightest);
   --hiq-disabled-background-color: var(--hiq-gray-lightest);
-  --hiq-disabled-text-color: var(--hiq-gray-light);
+  --hiq-disabled-text-color: var(--hiq-gray);
 
   /* layout variables */
 
   /* containers */
-  --hiq-max-container-width: 50rem;
+  --hiq-max-container-width: 60rem;
   --hiq-container-horizontal-gap: 2rem;
 
   /* spacing */
@@ -36,7 +36,7 @@
 
   /* border & outline */
   --hiq-border-radius: 0.2rem;
-  --hiq-outline-width: 0.2rem;
+  --hiq-outline-width: 0;
   --hiq-outline-color: hsl(210, 100%, 85%);
 
   /* transitions */
@@ -97,7 +97,7 @@
   --hiq-description-list-title-font-weight: var(--hiq-font-weight-semibold);
 
   /* global text color */
-  --hiq-text-color: var(--hiq-gray-lighter);
+  --hiq-text-color: var(--hiq-gray-light);
 
   /* inline text elements */
   --hiq-mark-color: hsl(50, 81%, 94%);
@@ -339,5 +339,5 @@
 }
 
 $tablet: 40rem;
-$desktop-sm: 45rem;
+$desktop-sm: 50rem;
 $desktop-md: 60rem;

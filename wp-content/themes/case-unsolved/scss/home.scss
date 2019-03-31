@@ -1,5 +1,5 @@
 .home-header {
-  padding-top: 15vh;
+  padding-top: 15rem;
 
   .container {
     position: relative;
@@ -13,10 +13,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh;
+  height: 30rem;
   border: 0;
   border-radius: 0;
   background-color: var(--hiq-gray-darker);
+
+  @media (min-width: $tablet) {
+    height: 40rem;
+  }
 }
 
 .home-header-text {
@@ -30,6 +34,10 @@
   @media (min-width: 30rem) {
     margin-bottom: 0.5rem;
     font-size: 5rem;
+  }
+
+  @media (min-width: $desktop-sm) {
+    font-size: 6rem;
   }
 }
 
@@ -160,6 +168,7 @@
   .summary-content-grouping {
     @media (min-width: $tablet) {
       @include grid;
+      align-items: center;
     }
 
     &:not(:first-of-type) {

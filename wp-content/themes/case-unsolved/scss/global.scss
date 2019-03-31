@@ -19,6 +19,11 @@ button,
   font-family: var(--font-family-condensed);
   text-transform: uppercase;
   letter-spacing: 0.075em;
+
+  @media (min-width: $tablet) {
+    height: 2.5rem;
+    padding: 0 0.75rem;
+  }
 }
 
 blockquote {
@@ -31,6 +36,10 @@ blockquote {
 
     @media (min-width: $tablet) {
       font-size: 1.25rem;
+    }
+
+    @media (min-width: $desktop-sm) {
+      font-size: 1.5rem;
     }
 
     &::before {

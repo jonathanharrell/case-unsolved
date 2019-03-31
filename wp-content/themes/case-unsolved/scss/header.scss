@@ -85,5 +85,9 @@
         border-bottom-color: var(--hiq-color-primary);
       }
     }
+
+    @media (min-width: $desktop-sm) {
+      font-size: var(--hiq-font-size-small);
+    }
   }
 }

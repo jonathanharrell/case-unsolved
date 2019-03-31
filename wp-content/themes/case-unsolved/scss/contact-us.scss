@@ -20,17 +20,27 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh;
+  height: 30rem;
   border: 0;
   border-radius: 0;
   background-color: var(--hiq-gray-darker);
+
+  @media (min-width: $tablet) {
+    height: 40rem;
+  }
+}
+
+.contact-title {
+  @media (min-width: $desktop-sm) {
+    font-size: 3rem;
+  }
 }
 
 .contact-info {
   position: relative;
-  padding-top: 15vh;
+  padding-top: 15rem;
 
   @media (min-width: $tablet) {
-    padding-top: 25vh;
+    padding-top: 25rem;
   }
 }

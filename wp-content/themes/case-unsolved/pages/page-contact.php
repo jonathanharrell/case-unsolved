@@ -13,7 +13,7 @@ get_header();
     <img src="" alt="" class="contact-us-image">
     <div class="container">
         <section class="contact-info">
-            <h1>Contact Us</h1>
+            <h1 class="contact-title">Contact Us</h1>
             <p>Write to <a href="mailto:cj@cjarellano.com">CJ@CJarellano.com</a> to learn more about ​Case Unsolved.</p>
             <p><a href="mailto:cj@cjarellano.com" class="button">Email us</a></p>
         </section>

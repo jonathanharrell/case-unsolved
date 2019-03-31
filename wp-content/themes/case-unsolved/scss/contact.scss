@@ -2,9 +2,13 @@
   padding: 3rem 0;
   background-color: var(--hiq-gray-darker);
   text-align: center;
+
+  @media (min-width: $desktop-sm) {
+    padding: 5rem 0;
+  }
 }
 
-.contact-title {
+.contact-us-title {
   margin-bottom: 1.5rem;
   font-size: var(--hiq-font-size-3);
   font-weight: var(--hiq-font-weight-bold);
