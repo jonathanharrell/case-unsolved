@@ -119,6 +119,7 @@
 
   @media (min-width: $tablet) {
     @include grid;
+    align-items: start;
     margin: 6rem 0;
   }
 
@@ -128,10 +129,12 @@
 }
 
 .team-member-image {
+  position: relative;
   margin-bottom: 1.5rem;
 
   @media (min-width: $tablet) {
     grid-column: auto / span 4;
+    padding: 50% 0;
   }
 
   @media (min-width: $desktop-md) {
@@ -146,11 +149,14 @@
     border: 0;
     border-radius: 50%;
     background-color: var(--hiq-gray-darker);
+    object-fit: cover;
 
     @media (min-width: $tablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: auto;
-      padding: 50% 0;
+      height: 100%;
     }
   }
 }
@@ -162,6 +168,11 @@
 
   @media (min-width: $desktop-md) {
     grid-column: 6 / -2;
+  }
+
+  a {
+    text-decoration: underline;
+    color: var(--hiq-text-color);
   }
 }
 

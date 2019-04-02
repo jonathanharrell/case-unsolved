@@ -9,26 +9,32 @@ get_header();
     <header class="blog-header is-visually-hidden">
         <h1>Blog</h1>
     </header>
-    <section class="blog-posts">
-        <article class="blog-post">
-            <div class="container">
-                <div class="blog-post-wrapper">
-                    <time datetime="2001-05-15T19:00" class="blog-post-date">11/11/2018</time>
-                    <h2 class="blog-post-title">Case Unsolved Wins!</h2>
-                    <p>​The Case Unsolved team pitched our project at IFP Chicago and the Chicago International Film Festival's Pitch at Industry Days, a competition in which five narrative feature projects pitch to a live audience. A panel of judges awarded the winner with a prize package of production services valued at $20,000.  Check out our presentation in the video above to hear more details about our feature film and why we're making it. (Spoiler alert: we won!)</p>
-                </div>
-            </div>
-        </article>
-        <article class="blog-post">
-            <div class="container">
-                <div class="blog-post-wrapper">
-                    <time datetime="2001-05-15T19:00" class="blog-post-date">11/11/2018</time>
-                    <h2 class="blog-post-title">Case Unsolved Wins!</h2>
-                    <p>​The Case Unsolved team pitched our project at IFP Chicago and the Chicago International Film Festival's Pitch at Industry Days, a competition in which five narrative feature projects pitch to a live audience. A panel of judges awarded the winner with a prize package of production services valued at $20,000.  Check out our presentation in the video above to hear more details about our feature film and why we're making it. (Spoiler alert: we won!)</p>
-                </div>
-            </div>
-        </article>
-    </section>
+    <?php
+        query_posts([
+            'post_type' => 'post',
+            'order' => 'DESC'
+        ]);
+
+        if(have_posts()) : ?>
+            <section class="blog-posts">
+                <?php while(have_posts()) : the_post(); ?>
+                    <article class="blog-post">
+                        <div class="container">
+                            <div class="blog-post-wrapper">
+                                <time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="blog-post-date">
+                                    <?php echo get_the_date('m/d/Y'); ?>
+                                </time>
+                                <h2 class="blog-post-title"><?php the_title(); ?></h2>
+                                <?php the_content(); ?>
+                            </div>
+                        </div>
+                    </article>
+                    <?php
+                endwhile;
+                wp_reset_query();
+                ?>
+            </section>
+        <?php endif; ?>
     <?php get_template_part('partials/content', 'contact'); ?>
 </main>
 

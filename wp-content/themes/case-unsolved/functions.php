@@ -1,11 +1,16 @@
 <?php
 
 require 'classes/WHQAssets.php';
+require_once 'functions/menus.php';
+require_once 'functions/post-types.php';
 
 $GLOBALS['assets'] = new WHQAssets(get_template_directory() . '/build/manifest.json');
 
-function register_my_menu()
+add_theme_support( 'post-thumbnails' );
+
+add_action('wp_print_styles', 'wps_deregister_styles', 100);
+
+function wps_deregister_styles()
 {
-    register_nav_menu('header-menu',__('Header Menu'));
+    wp_dequeue_style('wp-block-library');
 }
-add_action('init', 'register_my_menu');

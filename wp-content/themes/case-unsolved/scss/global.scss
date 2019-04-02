@@ -54,15 +54,26 @@ blockquote {
   cite {
     display: inline-block;
     margin-top: 1.5rem;
-    padding: 0.5rem 0;
-    border-top: 1px solid var(--hiq-color-primary);
-    border-bottom: 1px solid var(--hiq-color-primary);
-    font-size: var(--hiq-font-size-small);
-    letter-spacing: 0.5em;
-    text-transform: uppercase;
 
     &::before {
       content: none;
     }
+  }
+}
+
+cite {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--hiq-color-primary);
+  border-bottom: 1px solid var(--hiq-color-primary);
+  font-family: var(--font-family-serif);
+  font-size: var(--hiq-font-size-small);
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--hiq-color-primary);
+
+  &::before {
+    content: none;
   }
 }

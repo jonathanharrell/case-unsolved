@@ -13,8 +13,10 @@ get_header();
     <img src="" alt="" class="contact-us-image">
     <div class="container">
         <section class="contact-info">
-            <h1 class="contact-title">Contact Us</h1>
-            <p>Write to <a href="mailto:cj@cjarellano.com">CJ@CJarellano.com</a> to learn more about ​Case Unsolved.</p>
+            <h1 class="contact-title">
+                <?php the_title(); ?>
+            </h1>
+            <?php the_content(); ?>
             <p><a href="mailto:cj@cjarellano.com" class="button">Email us</a></p>
         </section>
     </div>
