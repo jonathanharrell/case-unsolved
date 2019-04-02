@@ -1,13 +1,16 @@
-.about-image {
+.about-header .wp-post-image {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 30rem;
+  height: 20rem;
   border: 0;
   border-radius: 0;
   background-color: var(--hiq-gray-darker);
+  opacity: 0.5;
+  object-fit: cover;
+  object-position: bottom;
 
   @media (min-width: $tablet) {
     height: 40rem;
@@ -16,7 +19,7 @@
 
 .writer-director-statement {
   position: relative;
-  padding-top: 15rem;
+  padding-top: 12rem;
   padding-bottom: 3rem;
 
   @media (min-width: $tablet) {

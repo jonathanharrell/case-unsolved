@@ -11,6 +11,7 @@ get_header();
 
 <main class="home">
     <header class="home-header">
+        <?php the_post_thumbnail(); ?>
         <img src="" alt="" class="home-header-image">
         <div class="container">
             <div class="home-header-text">

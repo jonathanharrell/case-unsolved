@@ -10,7 +10,7 @@ get_header();
 <?php get_template_part('partials/content', 'site-header'); ?>
 
 <main class="contact-us">
-    <img src="" alt="" class="contact-us-image">
+    <?php the_post_thumbnail(); ?>
     <div class="container">
         <section class="contact-info">
             <h1 class="contact-title">

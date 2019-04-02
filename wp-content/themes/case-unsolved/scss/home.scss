@@ -1,5 +1,9 @@
 .home-header {
-  padding-top: 15rem;
+  padding-top: 11rem;
+
+  @media (min-width: $tablet) {
+    padding-top: 15rem;
+  }
 
   .container {
     position: relative;
@@ -7,16 +11,18 @@
   }
 }
 
-.home-header-image {
+.home-header .wp-post-image {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 30rem;
+  height: 20rem;
   border: 0;
   border-radius: 0;
   background-color: var(--hiq-gray-darker);
+  object-fit: cover;
+  object-position: bottom;
 
   @media (min-width: $tablet) {
     height: 40rem;
@@ -28,11 +34,11 @@
 }
 
 .home-title {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 3.25rem;
   line-height: 1;
 
   @media (min-width: 30rem) {
-    margin-bottom: 0.5rem;
     font-size: 5rem;
   }
 
@@ -54,7 +60,7 @@
 }
 
 .awards {
-  margin: 3rem 0 5rem;
+  margin: 4rem 0 5rem;
 
   @media (min-width: $tablet) {
     margin: 5rem 0 6rem;

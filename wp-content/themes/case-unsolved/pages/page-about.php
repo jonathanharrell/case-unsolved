@@ -10,11 +10,11 @@ get_header();
 <?php get_template_part('partials/content', 'site-header'); ?>
 
 <main class="about">
-    <img src="" alt="" class="about-image">
+    <header class="about-header">
+        <?php the_post_thumbnail(); ?>
+        <h1 class="is-visually-hidden">About</h1>
+    </header>
     <div class="container">
-        <header class="about-header">
-            <h1 class="is-visually-hidden">About</h1>
-        </header>
         <section class="writer-director-statement">
             <div class="writer-director-statement-wrapper">
                 <header class="writer-director-statement-header">
