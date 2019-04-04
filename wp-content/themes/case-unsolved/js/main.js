@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     siteNavLinks.forEach(link => {
         link.addEventListener('click', () => {
+            console.log('test')
             setTimeout(() => {
                 closeSiteMenu()
             }, 150)
