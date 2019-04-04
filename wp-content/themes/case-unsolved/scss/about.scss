@@ -8,9 +8,9 @@
   border: 0;
   border-radius: 0;
   background-color: var(--hiq-gray-darker);
-  opacity: 0.5;
   object-fit: cover;
   object-position: bottom;
+  opacity: 0.5;
 
   @media (min-width: $tablet) {
     height: 40rem;
@@ -28,8 +28,8 @@
   }
 
   h2 {
-    font-size: var(--hiq-font-size-1);
     font-family: var(--font-family-decorative);
+    font-size: var(--hiq-font-size-1);
     text-transform: uppercase;
     color: white;
 
@@ -100,12 +100,12 @@
     z-index: 1;
     margin: 0 auto;
     padding: 0 1.5rem;
-    font-size: var(--hiq-font-size-1);
-    font-family: var(--font-family-decorative);
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
     background-color: var(--hiq-gray-darkest);
+    font-family: var(--font-family-decorative);
+    font-size: var(--hiq-font-size-1);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
 
     @media (min-width: $tablet) {
       padding: 0 2rem;
@@ -146,9 +146,9 @@
 
   img {
     display: block;
-    margin: 0 auto;
     width: 10rem;
     height: 10rem;
+    margin: 0 auto;
     border: 0;
     border-radius: 50%;
     background-color: var(--hiq-gray-darker);
@@ -184,9 +184,9 @@
   font-family: var(--font-family-condensed);
   font-size: var(--hiq-font-size-small);
   letter-spacing: 0.075em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--hiq-color-primary);
-  text-align: center;
 
   @media (min-width: $tablet) {
     text-align: left;

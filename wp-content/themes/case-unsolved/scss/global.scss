@@ -17,8 +17,8 @@ button,
 [role='button'],
 .button {
   font-family: var(--font-family-condensed);
-  text-transform: uppercase;
   letter-spacing: 0.075em;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
     height: 2.5rem;

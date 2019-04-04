@@ -1,7 +1,7 @@
 .site-header {
   position: relative;
-  padding: 1rem 0;
   z-index: 3;
+  padding: 1rem 0;
 
   @media (min-width: $tablet) {
     display: none;
@@ -28,17 +28,17 @@
 .site-menu {
   display: flex;
   visibility: hidden;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color: var(--hiq-gray-darkest);
-  text-align: center;
   opacity: 0;
+  text-align: center;
 
   @media (min-width: $tablet) {
     visibility: visible;
@@ -69,8 +69,8 @@
   a {
     display: block;
     padding: 1.5rem 0;
-    font-size: var(--hiq-font-size-large);
     font-family: var(--font-family-condensed);
+    font-size: var(--hiq-font-size-large);
     letter-spacing: 0.075em;
     text-transform: uppercase;
     color: white;

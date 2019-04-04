@@ -50,9 +50,10 @@
         "workbox-webpack-plugin": "^4.1.1"
     },
     "browserslist": [
-        "> 1%",
-        "Last 2 versions",
-        "not IE 10"
+        "Last 3 iOS versions",
+        "Last 3 Chrome versions",
+        "Last 3 Safari versions",
+        "Last 3 Edge versions"
     ],
     "babel": {
         "presets": [
@@ -67,7 +68,18 @@
         "extends": "eslint-config-whq"
     },
     "stylelint": {
-        "extends": "stylelint-config-whq"
+        "extends": "stylelint-config-whq",
+        "rules": {
+            "value-keyword-case": null,
+            "plugin/no-unsupported-browser-features": [true, {
+                "ignore": [
+                    "kerning-pairs-ligatures",
+                    "object-fit",
+                    "multicolumn",
+                    "flexbox"
+                ]
+            }]
+        }
     },
     "postcss": {
         "plugins": {

@@ -70,9 +70,9 @@
 .awards-wrapper {
   @media (min-width: $tablet) {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    position: relative;
 
     &::before {
       display: block;
