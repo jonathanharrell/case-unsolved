@@ -9,9 +9,6 @@ const swup = new Swup({
 })
 
 swup.on('contentReplaced', () => {
-    const menu = document.querySelector('.site-menu')
-    menu.classList.remove('visible')
-
     fluidVideos()
 })
 
@@ -21,6 +18,13 @@ function toggleSiteMenu () {
     menu.classList.toggle('visible')
 }
 
+function closeSiteMenu () {
+    document.body.classList.remove('site-menu-open')
+    const menu = document.querySelector('.site-menu')
+    menu.classList.remove('visible')
+}
+
+// size Vimeo videos appropriately for window width
 function fluidVideos () {
     var iframes = document.getElementsByTagName('iframe')
     for (var i = 0; i < iframes.length; i++) {
@@ -50,6 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document
         .querySelector('.site-menu-toggle')
         .addEventListener('click', toggleSiteMenu)
+
+    const siteNavLinks = Array.from(document.querySelectorAll('.site-menu a'))
+
+    siteNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            setTimeout(() => {
+                closeSiteMenu()
+            }, 150)
+        })
+    })
 
     fluidVideos()
 })

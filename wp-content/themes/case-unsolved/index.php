@@ -16,7 +16,7 @@ get_header();
         ]);
 
         if(have_posts()) : ?>
-            <section class="blog-posts">
+            <section class="blog-posts transition-slide-up">
                 <?php while(have_posts()) : the_post(); ?>
                     <article class="blog-post">
                         <div class="container">

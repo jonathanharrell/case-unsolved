@@ -12,8 +12,7 @@ get_header();
 <main class="home transition-fade" id="swup">
     <header class="home-header">
         <?php the_post_thumbnail(); ?>
-        <img src="" alt="" class="home-header-image">
-        <div class="container">
+        <div class="container transition-slide-up">
             <div class="home-header-text">
                 <h1 class="home-title">Case Unsolved</h1>
                 <p class="home-lead">A horror feature about a gay couple who accidentally summon a ghost from an old 1980s TV show.</p>

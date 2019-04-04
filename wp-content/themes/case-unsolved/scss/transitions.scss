@@ -1,0 +1,26 @@
+.transition-fade {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.transition-slide-up {
+  transition: opacity 0.3s var(--hiq-easing), transform 0.3s var(--hiq-easing);
+}
+
+html.is-animating .transition-slide-up {
+  opacity: 0;
+  transform: translateY(1.5rem);
+}
+
+.transition-scale-down {
+  transition: opacity 0.3s var(--hiq-easing), transform 0.3s var(--hiq-easing);
+}
+
+html.is-animating .transition-scale-down {
+  opacity: 0;
+  transform: scale(1.125);
+}

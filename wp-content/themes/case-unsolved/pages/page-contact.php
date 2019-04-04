@@ -11,7 +11,7 @@ get_header();
 
 <main class="contact-us transition-fade" id="swup">
     <?php the_post_thumbnail(); ?>
-    <div class="container">
+    <div class="container transition-slide-up">
         <section class="contact-info">
             <h1 class="contact-title">
                 <?php the_title(); ?>

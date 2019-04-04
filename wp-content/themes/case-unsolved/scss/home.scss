@@ -12,6 +12,7 @@
 }
 
 .home-header .wp-post-image {
+  @extend .transition-scale-down;
   display: block;
   position: absolute;
   top: 0;

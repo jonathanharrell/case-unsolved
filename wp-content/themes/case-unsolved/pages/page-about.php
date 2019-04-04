@@ -14,7 +14,7 @@ get_header();
         <?php the_post_thumbnail(); ?>
         <h1 class="is-visually-hidden">About</h1>
     </header>
-    <div class="container">
+    <div class="container transition-slide-up">
         <section class="writer-director-statement">
             <div class="writer-director-statement-wrapper">
                 <header class="writer-director-statement-header">

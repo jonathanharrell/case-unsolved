@@ -41,7 +41,7 @@
   background-color: var(--hiq-gray-darkest);
   opacity: 0;
   text-align: center;
-  transition: opacity 0.3s var(--hiq-easing);
+  transition: opacity 0.3s var(--hiq-easing), visibility 0 linear 0.3s;
 
   @media (min-width: $tablet) {
     visibility: visible;
