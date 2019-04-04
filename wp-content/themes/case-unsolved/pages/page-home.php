@@ -17,7 +17,7 @@ get_header();
             <div class="home-header-text">
                 <h1 class="home-title">Case Unsolved</h1>
                 <p class="home-lead">A horror feature about a gay couple who accidentally summon a ghost from an old 1980s TV show.</p>
-                <p><a href="" class="button">Watch the Pitch</a></p>
+                <p><a href="https://vimeo.com/300204588" target="_blank" class="button">Watch the Pitch</a></p>
             </div>
         </div>
     </header>
