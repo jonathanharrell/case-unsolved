@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php wp_title('|', true, 'left'); ?></title>
     <link rel="stylesheet" href="<?php echo $GLOBALS['assets']->get(get_template_directory_uri() . '/build', 'main.css'); ?>">
-    <!--<?php get_template_part('partials/service-worker', 'index'); ?>-->
+    <?php get_template_part( 'partials/content', 'favicon' ); ?>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class($class); ?>>
