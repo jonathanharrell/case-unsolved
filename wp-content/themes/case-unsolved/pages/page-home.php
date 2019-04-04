@@ -27,7 +27,7 @@ get_header();
                 <div class="award">
                     <p class="award-winner">Winner</p>
                     <h3 class="award-title">The Pitch at Industry Days</h3>
-                    <p class="award-org">IPF Chicago & Chicago Intl. Film Festival</p>
+                    <p class="award-org">IFP Chicago & Chicago Intl. Film Festival</p>
                 </div>
                 <div class="award">
                     <p class="award-winner">Winner</p>
