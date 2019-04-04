@@ -1,6 +1,7 @@
 'use strict'
 
 function toggleSiteMenu () {
+    document.body.classList.toggle('site-menu-open')
     const menu = document.querySelector('.site-menu')
     menu.classList.toggle('visible')
 }

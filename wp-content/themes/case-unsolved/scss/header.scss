@@ -15,6 +15,7 @@
 .site-menu-toggle {
   all: unset;
   margin-left: auto;
+  background-color: transparent !important;
 
   .bar {
     display: block;
@@ -22,6 +23,7 @@
     height: 2px;
     margin: 0.875rem 0;
     background-color: white;
+    transition: transform var(--hiq-speed) var(--hiq-easing);
   }
 }
 
@@ -39,6 +41,7 @@
   background-color: var(--hiq-gray-darkest);
   opacity: 0;
   text-align: center;
+  transition: opacity var(--hiq-speed) var(--hiq-easing);
 
   @media (min-width: $tablet) {
     visibility: visible;
@@ -76,18 +79,73 @@
     color: white;
 
     @media (min-width: $tablet) {
+      position: relative;
       margin: 0 2rem;
       padding: 0.25rem 0;
-      border-bottom: 3px solid transparent;
       font-size: var(--hiq-font-size-base);
 
-      &[aria-current] {
-        border-bottom-color: var(--hiq-color-primary);
+      &::after {
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: transparent;
+        transform: scaleX(0);
+        transform-origin: 0;
+        transition: transform var(--hiq-speed) var(--hiq-easing);
+        content: '';
+      }
+
+      &[aria-current]::after,
+      &:hover::after {
+        background-color: var(--hiq-color-primary);
+        transform: scaleX(1);
+      }
+
+      &:focus,
+      &:active {
+        color: var(--hiq-color-primary);
       }
     }
 
     @media (min-width: $desktop-sm) {
       font-size: var(--hiq-font-size-small);
+    }
+  }
+}
+
+@media (max-width: $desktop-md) {
+
+  .site-menu-open {
+    max-height: 100vh;
+    overflow: hidden;
+
+    .site-header {
+      position: fixed;
+      width: 100%;
+    }
+
+    .site-menu-toggle {
+
+      .bar {
+        position: relative;
+
+        &:first-child {
+          top: 8px;
+          transform: rotate(45deg);
+        }
+
+        &:last-child {
+          top: -8px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    main {
+      margin-top: 4.875rem;
     }
   }
 }
