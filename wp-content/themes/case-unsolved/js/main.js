@@ -1,5 +1,20 @@
 'use strict'
 
+import Swup from 'swup'
+
+// page transitions
+const swup = new Swup({
+    LINK_SELECTOR: '.site-menu nav a',
+    preload: true
+})
+
+swup.on('contentReplaced', () => {
+    const menu = document.querySelector('.site-menu')
+    menu.classList.remove('visible')
+
+    fluidVideos()
+})
+
 function toggleSiteMenu () {
     document.body.classList.toggle('site-menu-open')
     const menu = document.querySelector('.site-menu')

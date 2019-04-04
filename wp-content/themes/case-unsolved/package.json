@@ -71,14 +71,17 @@
         "extends": "stylelint-config-whq",
         "rules": {
             "value-keyword-case": null,
-            "plugin/no-unsupported-browser-features": [true, {
-                "ignore": [
-                    "kerning-pairs-ligatures",
-                    "object-fit",
-                    "multicolumn",
-                    "flexbox"
-                ]
-            }]
+            "plugin/no-unsupported-browser-features": [
+                true,
+                {
+                    "ignore": [
+                        "kerning-pairs-ligatures",
+                        "object-fit",
+                        "multicolumn",
+                        "flexbox"
+                    ]
+                }
+            ]
         }
     },
     "postcss": {
@@ -87,6 +90,7 @@
         }
     },
     "dependencies": {
-        "hiq": "^2.6.3"
+        "hiq": "^2.6.3",
+        "swup": "^1.9.0"
     }
 }

@@ -41,7 +41,7 @@
   background-color: var(--hiq-gray-darkest);
   opacity: 0;
   text-align: center;
-  transition: opacity var(--hiq-speed) var(--hiq-easing);
+  transition: opacity 0.3s var(--hiq-easing);
 
   @media (min-width: $tablet) {
     visibility: visible;
@@ -77,12 +77,15 @@
     letter-spacing: 0.075em;
     text-transform: uppercase;
     color: white;
+    transform: translateY(1.5rem);
+    transition: transform 0.3s var(--hiq-easing);
 
     @media (min-width: $tablet) {
       position: relative;
       margin: 0 2rem;
       padding: 0.25rem 0;
       font-size: var(--hiq-font-size-base);
+      transform: translateY(0);
 
       &::after {
         display: block;
@@ -98,7 +101,6 @@
         content: '';
       }
 
-      &[aria-current]::after,
       &:hover::after {
         background-color: var(--hiq-color-primary);
         transform: scaleX(1);
@@ -121,9 +123,11 @@
   .site-menu-open {
     max-height: 100vh;
     overflow: hidden;
+    padding-top: 4.875rem;
 
     .site-header {
       position: fixed;
+      top: 0;
       left: 0;
       width: 100%;
     }
@@ -145,8 +149,8 @@
       }
     }
 
-    main {
-      margin-top: 4.875rem;
+    .site-menu a {
+      transform: translateY(0);
     }
   }
 }

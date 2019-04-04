@@ -9,7 +9,7 @@ get_header();
 
 <?php get_template_part('partials/content', 'site-header'); ?>
 
-<main class="about">
+<main class="about transition-fade" id="swup">
     <header class="about-header">
         <?php the_post_thumbnail(); ?>
         <h1 class="is-visually-hidden">About</h1>

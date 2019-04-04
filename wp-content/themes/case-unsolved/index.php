@@ -5,7 +5,7 @@ get_header();
 
 <?php get_template_part('partials/content', 'site-header'); ?>
 
-<main class="blog">
+<main class="blog transition-fade" id="swup">
     <header class="blog-header is-visually-hidden">
         <h1>Blog</h1>
     </header>

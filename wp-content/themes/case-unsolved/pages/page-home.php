@@ -9,7 +9,7 @@ get_header();
 
 <?php get_template_part('partials/content', 'site-header'); ?>
 
-<main class="home">
+<main class="home transition-fade" id="swup">
     <header class="home-header">
         <?php the_post_thumbnail(); ?>
         <img src="" alt="" class="home-header-image">
