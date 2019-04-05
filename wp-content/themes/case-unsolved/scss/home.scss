@@ -138,8 +138,9 @@
 }
 
 .award-winner {
+  @include font-family-condensed;
+
   margin-bottom: 0.25rem;
-  font-family: var(--font-family-condensed);
   font-size: var(--hiq-font-size-small);
   letter-spacing: 0.075em;
   text-transform: uppercase;

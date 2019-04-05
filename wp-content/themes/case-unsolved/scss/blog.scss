@@ -27,9 +27,10 @@
 }
 
 .blog-post-date {
+  @include font-family-condensed;
+
   display: block;
   margin-bottom: 0.5rem;
-  font-family: var(--font-family-condensed);
   font-size: var(--hiq-font-size-small);
   letter-spacing: 0.075em;
   text-transform: uppercase;

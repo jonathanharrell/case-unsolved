@@ -17,7 +17,8 @@ p {
 button,
 [role='button'],
 .button {
-  font-family: var(--font-family-condensed);
+  @include font-family-condensed;
+
   letter-spacing: 0.075em;
   text-transform: uppercase;
 

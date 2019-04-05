@@ -71,9 +71,10 @@
   }
 
   a {
+    @include font-family-condensed;
+
     display: block;
     padding: 1.5rem 0;
-    font-family: var(--font-family-condensed);
     font-size: var(--hiq-font-size-large);
     letter-spacing: 0.075em;
     text-transform: uppercase;

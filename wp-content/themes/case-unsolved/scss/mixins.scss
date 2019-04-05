@@ -3,3 +3,8 @@
   grid-gap: 45px;
   grid-template-columns: repeat(12, 1fr);
 }
+
+@mixin font-family-condensed {
+  font-stretch: condensed;
+  font-weight: 900;
+}
