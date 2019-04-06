@@ -5,6 +5,7 @@
 }
 
 @mixin font-family-condensed {
+  font-family: var(--font-family-condensed);
   font-stretch: condensed;
   font-weight: 900;
 }
