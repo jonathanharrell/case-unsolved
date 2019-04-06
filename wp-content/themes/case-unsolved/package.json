@@ -78,7 +78,8 @@
                         "kerning-pairs-ligatures",
                         "object-fit",
                         "multicolumn",
-                        "flexbox"
+                        "flexbox",
+                        "css-font-stretch"
                     ]
                 }
             ]
