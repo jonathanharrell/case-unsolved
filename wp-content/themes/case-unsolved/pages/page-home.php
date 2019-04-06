@@ -15,7 +15,7 @@ get_header();
         <div class="container transition-slide-up">
             <div class="home-header-text">
                 <h1 class="home-title">Case Unsolved</h1>
-                <p class="home-lead">A horror feature about a gay couple who accidentally summon supernatural monsters from a cursed 1980s TV show.</p>
+                <p class="home-lead">A horror feature about a gay couple who must defeat the supernatural monsters they accidentally summoned from a cursed 1980s TV show.</p>
                 <p><a href="https://vimeo.com/300204588" target="_blank" class="button">Watch the Pitch</a></p>
             </div>
         </div>
