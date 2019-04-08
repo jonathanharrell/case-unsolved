@@ -17,7 +17,7 @@ get_header();
                 <?php the_title(); ?>
             </h1>
             <?php the_content(); ?>
-            <p><a href="mailto:cj@cjarellano.com" class="button">Email us</a></p>
+            <p><a href="mailto:connect@caseunsolved.com" class="button">Email us</a></p>
         </section>
     </div>
 </main>
