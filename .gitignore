@@ -1,5 +1,6 @@
 wp-content/themes/case-unsolved/node_modules
 wp-content/themes/case-unsolved/build
+wp-content/uploads
 
 wp-config.php
 .htaccess

@@ -15,28 +15,60 @@ get_header();
         <div class="container transition-slide-up">
             <div class="home-header-text">
                 <h1 class="home-title">Case Unsolved</h1>
-                <p class="home-lead">A horror feature about a gay couple who must defeat the supernatural monsters they accidentally summoned from a cursed 1980s TV show.</p>
+                <?php
+                $tagline = get_post_meta($post->ID, 'Tagline', true);
+                if ($tagline) :
+                    ?>
+                    <p class="home-lead">
+                        <?php echo $tagline; ?>
+                    </p>
+                    <?php endif; ?>
                 <p><a href="https://vimeo.com/300204588" target="_blank" class="button">Watch the Pitch</a></p>
             </div>
         </div>
     </header>
-    <section class="awards">
-        <div class="container">
-            <h2 class="is-visually-hidden">Awards</h2>
-            <div class="awards-wrapper">
-                <div class="award">
-                    <p class="award-winner">Winner</p>
-                    <h3 class="award-title">The Pitch at Industry Days</h3>
-                    <p class="award-org">IFP Chicago & Chicago Intl. Film Festival</p>
+    <?php
+        query_posts([
+            'post_type' => 'award',
+            'orderby' => 'menu_order',
+            'order' => 'ASC'
+        ]);
+
+        if(have_posts()) : ?>
+            <section class="awards">
+                <div class="container">
+                    <h2 class="is-visually-hidden">Awards</h2>
+                    <div class="awards-wrapper">
+                        <?php while(have_posts()) : the_post(); ?>
+                            <div class="award">
+                                <?php
+                                $place = get_post_meta($post->ID, 'Place', true);
+                                if ($place) :
+                                    ?>
+                                    <p class="award-winner">
+                                        <?php echo $place; ?>
+                                    </p>
+                                <?php endif; ?>
+                                <h3 class="award-title">
+                                    <?php the_title(); ?>
+                                </h3>
+                                <?php
+                                $org = get_post_meta($post->ID, 'Organization', true);
+                                if ($org) :
+                                    ?>
+                                    <p class="award-org">
+                                        <?php echo $org; ?>
+                                    </p>
+                                <?php endif; ?>
+                            </div>
+                            <?php
+                        endwhile;
+                        wp_reset_query();
+                        ?>
+                    </div>
                 </div>
-                <div class="award">
-                    <p class="award-winner">Winner</p>
-                    <h3 class="award-title">Fast Track Fellowship</h3>
-                    <p class="award-org">International Screenwriter's Assocation</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+    <?php endif; ?>
     <div class="container">
         <?php the_content(); ?>
     </div>
