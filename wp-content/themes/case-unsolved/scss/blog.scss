@@ -48,3 +48,19 @@
     font-size: 3rem;
   }
 }
+
+.wp-block-gallery {
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+
+  .blocks-gallery-item {
+    margin-bottom: 2rem;
+
+    figcaption {
+      font-size: var(--hiq-font-size-small);
+      font-weight: var(--hiq-font-weight-medium);
+      color: var(--hiq-gray);
+    }
+  }
+}
