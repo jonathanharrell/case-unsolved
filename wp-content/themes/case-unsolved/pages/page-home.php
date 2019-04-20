@@ -12,6 +12,9 @@ get_header();
 <main class="home transition-fade" id="swup">
     <header class="home-header">
         <?php the_post_thumbnail(); ?>
+        <div class="video-wrapper">
+            <iframe src="https://player.vimeo.com/video/331327109?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
         <div class="container transition-slide-up">
             <div class="home-header-text">
                 <h1 class="home-title">Case Unsolved</h1>
@@ -23,7 +26,7 @@ get_header();
                         <?php echo $tagline; ?>
                     </p>
                     <?php endif; ?>
-                <p><a href="https://vimeo.com/300204588" target="_blank" class="button">Watch the Pitch</a></p>
+                <p><a href="https://vimeo.com/330129303/50d5308e3e" target="_blank" class="button">Watch the Teaser</a></p>
             </div>
         </div>
     </header>

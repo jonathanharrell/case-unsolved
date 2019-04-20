@@ -123,9 +123,9 @@
 
   /* links */
   --hiq-link-color: var(--hiq-color-primary);
-  --hiq-link-hover-color: hsl(210, 100%, 25%);
-  --hiq-link-focus-color: hsl(210, 100%, 25%);
-  --hiq-link-active-color: hsl(210, 100%, 25%);
+  --hiq-link-hover-color: hsl(11, 84%, 45%);
+  --hiq-link-focus-color: hsl(11, 84%, 45%);
+  --hiq-link-active-color: hsl(11, 84%, 45%);
   --hiq-link-text-decoration: none;
 
   /* button variables */
@@ -341,3 +341,4 @@
 $tablet: 640px;
 $desktop-sm: 800px;
 $desktop-md: 960px;
+$desktop-lg: 1200px;
