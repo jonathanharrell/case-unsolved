@@ -27,6 +27,14 @@
   object-position: bottom;
 
   @media (min-width: $tablet) {
+    height: 27rem;
+  }
+
+  @media (min-width: $desktop-md) {
+    height: 30rem;
+  }
+
+  @media (min-width: $desktop-lg) {
     height: 37rem;
   }
 
